@@ -1,0 +1,38 @@
+Script started on 2023-05-09 16:32:55-07:00
+bash-4.4$ java Compress test.txt
+Would you like to run again? (y/n)
+n
+bash-4.4$ cat test.txt.zzz.log
+Compression of test.txt
+Compressed from 102 Kilobytes to 209 Kilobytes
+Compression took 5.566 seconds
+The dictionary contains 35061 total entries
+The table was rehashed 2 times
+bash-4.4$ java Compress test2.txt
+Would you like to run again? (y/n)
+n
+bash-4.4$ cat test2.txt.zzz.log 
+Compression of test2.txt
+Compressed from 102 Kilobytes to 305 Kilobytes
+Compression took 9.183 seconds
+The dictionary contains 51061 total entries
+The table was rehashed 2 times
+bash-4.4$ java Decompress test.txt.zzz
+Would you like to run again? (y/n)
+y
+What is the name of the file to compress?
+test2.txt.zzz
+Would you like to run again? (y/n)
+n
+bash-4.4$ cat test.txt.log
+Deompression for file test.txt.zzz
+Compression took 0.144 seconds
+The table was doubled 0 times
+bash-4.4$ java test2.txt.log 
+Deompression for file test2.txt.zzz
+Compression took 0.174 seconds
+The table was doubled 0 times
+bash-4.4$ exit
+exit
+
+Script done on 2023-05-09 16:34:14-07:00
